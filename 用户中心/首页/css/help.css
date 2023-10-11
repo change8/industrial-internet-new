@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+.subNavBg{
+    background:-webkit-linear-gradient(left,#fff 50%,#f3f3f3 50%);
+    background:-moz-linear-gradient(left,#fff 50%,#f3f3f3 50%);
+    background:-ms-linear-gradient(left,#fff 50%,#f3f3f3 50%);
+    background:-o-linear-gradient(left,#fff 50%,#f3f3f3 50%);
+    min-width:1200px; width:100%; 
+}
+
+.wid800{ width:900px; background: #fff; overflow:hidden;height:auto!important; min-height:400px; height:400px; }
+.wid300{ width:300px; background: #f3f3f3; height:auto!important; min-height:400px; height:400px;}
+
+/* TODO @lutz 二级页面导航 begin*/
+.UCMenu{padding: 0px 0;}
+.UCMenu .arrowDown{ background: url(images/arrowDown.png) no-repeat 50% 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    -webkit-transition: all;
+    transition: all;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+}
+.UCMenu .sidebar-inner {
+    position: relative;
+    width: auto;
+    height: 100%
+}
+.UCMenu #sideNav.nav{ width:300px;}
+.UCMenu #sideNav.nav li {
+    float: left;
+    width: 100%;
+    margin-top: 0; position:relative; z-index:10;
+}
+.UCMenu #sideNav.nav li.title {
+	padding: 0px 12px;
+	font-size: 20px;
+	position: relative;
+	color: #666; 
+	
+	border-bottom: 1px dashed #c8c8c8;
+	-webkit-transition: background;
+	transition: background;
+	-webkit-transition-duration: .3s;
+	transition-duration: .3s;
+	height:40px;
+	line-height:40px;
+	border-radius: 0;
+}
+
+.UCMenu #sideNav li a {
+   padding: 0px 10px 0px 20px;
+	font-size: 14px;
+	position: relative;
+	color: #808080;
+	
+	border-bottom: 1px dashed #c8c8c8;
+	-webkit-transition: background;
+	 transition: all;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+	height:46px;
+	line-height:46px;
+	border-radius: 0; 
+}
+.UCMenu #sideNav li a i.sideNav-arrow {
+    float: right;
+    margin-right: 0;
+    margin-left: 5px
+}
+.UCMenu #sideNav li a:hover { background: #e2e5e6; }
+.UCMenu #sideNav li a.active {
+    background: #fff;
+    font-weight: 700;
+    border-right: 1px solid transparent;
+}
+.UCMenu #sideNav li a.active i, .UCMenu #sideNav li a:hover i {}
+.UCMenu #sideNav li a.expand {}
+.UCMenu #sideNav li a.expand i {}
+.UCMenu #sideNav li .sub { display: none; }
+.UCMenu #sideNav li .sub a {
+    background:  url(images/leftDD.png) no-repeat 12px 50%;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    text-indent: 25px;
+    color: #353535;
+}
+.UCMenu #sideNav li .sub a.active {
+    background:#fff url(images/leftDD.png) no-repeat 21px 50%;
+    font-weight: 700;
+    border-right: 1px solid transparent;
+    border-top: 1px solid #e0e0da;
+    border-bottom: 1px solid #e0e0da
+}
+.UCMenu #sideNav li .sub a:hover {
+    background:#ededed url(images/leftDD.png) no-repeat 21px 50%;
+}
+.UCMenu #sideNav li .sub a.active:hover {
+    background:#fff url(images/leftDD.png) no-repeat 21px 50%;
+    cursor: default;
+}
+.UCMenu #sideNav li .sub li:first-child a.active, .UCMenu #sideNav li .sub li:first-child a.active:hover, .UCMenu #sideNav li .sub li:first-child a:hover {
+    border-top: 1px solid transparent
+}
+.UCMenu #sideNav li .sub.show li:last-child > a {}
+.UCMenu #sideNav li .sub li.hasSub > a {}
+.UCMenu #sideNav li .sub li.hasSub > a.expand { background: #eaeeef; }
+.UCMenu #sideNav.hasSub a.expand { border-top-color: transparent; }
+
+/* TODO @lutz 二级页面导航 end*/
+
+
+.helptitle{ font-size:24px; line-height:45px; border-bottom:1px solid #eee; font-weight:bold; margin-bottom:10px; margin-right:15px;}
+.helpcontent{ line-height:24px; padding:10px 15px 25px 5px; color:#8d9095; font-size:14px;}
+
+
+.download-list{ padding:4px;}
+.download-list ul{ margin:0 auto;}
+.download-list ul li { width:870px;text-align:left; line-height:34px; font-size:14px; border-bottom:1px dashed #CCC }
+.download-list ul li:hover { background:#f3f3f3 }
+.download-list ul li span{  float:right;text-align:left; width:90px;  font-size:12px;}

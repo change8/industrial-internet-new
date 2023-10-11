@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+
+.user_header{  width:100%; position:relative; background:#fff; border-bottom:1px solid #ccc ;box-shadow: 0 1px 3px #c8c8c8;}
+.user_header .logo{ font-size:22px;  color:#FFF; padding:10px 0 0 20px;}
+.user_header .login { line-height: 35px; position:absolute; z-index:10; right:20px; top:30px; padding-right:20px; }
+.user_header .login a { display: inline-block; min-width: 100px; margin: 0 0 0 15px; padding: 0 10px; background: #090; color: #fff; text-align: center; transition: all ease-in 0.12s; }
+.user_header .login a:hover { background: #030; }
+
+a.tuichu:link{ background:#6c7593 }
+a.tuichu:visited{background:#6a7ec3 }
+a.tuichu:hover{ background:#6c7593}
+a.tuichu:active{background:#6c7593 }
+
+.usernav{ padding:20px 0px 0px 0px; text-align:center}
+.usernav li { float: left; width: 158px; border: 1px solid #fff;   margin: 0 10px;  height: 90px; position: relative; cursor: pointer; text-align: center ; font-size:16px; color: #fff;  display:block; border:0px solid #ddd; border-bottom:0px; }
+.usernav li a{ width:100%; height:88px; display:block;background: #fbfaf8; padding-top:15px; color:#666; }
+.usernav  li i{ font-size:30px; color: #069}
+.usernav li a:hover{ background: #dee0f1; color:#fff; width:100%; height:90px;}
+.usernav li a:hover i{ color: #69F}
+.usernav li a.active{ background:#fff; color:#333;  height:90px;}
+
+.evenflow_shiftY { transition:transform 0.5s ease;	}
+.evenflow_shiftY:hover { transform:translateY(-20px); }
+
+
+.user_content{ padding:75px 50px; background: url(../images/user_bg.jpg) no-repeat; border-radius:10px;}
+.user_content .tubiao{ position:relative; width:190px; height:190px;}
+.user_content .tubiao img{  border-radius: 50%; width:190px; height:190px;border: 10px solid #f3f3f3; }
+.user_content .tubiao a{ position:absolute; z-index:100; width:100%; height:100%; left:0; top:0; text-align:center; background:rgba(0,0,0,0.5); transition:ease all 0.3s; display:none;border-radius: 50%; width:200px; height:200px; line-height:180px; font-size:18px; color:#FFF; text-indent:inherit}
+.user_content .tubiao:hover a{ display:block}
+
+.user_font{ padding:10px 0px 0 50px ; font-size:14px; line-height:30px;}
+.user_font a{ font-size:14px; color: #C60   }
+.user_font a:hover{ color:#C00; text-decoration:underline}
+/*.user_content .moneybox{ padding:25px 20px ; font-size:16px; text-align:center; line-height:40px; padding-right:40px;background:}*/
+.user_content .money{ font-size:28px; color:#C00; font-weight:bold;}
+
+.mima_box{width:550px; position: relative;  top:50%; margin: 0 auto;margin-top:-250px; }
+.modal-body .red{ color:#C00; font-size:12px; margin-top:4px;}
+
+.defaultbtn{background:#204723; color:#FFF; font-size: 12px;  text-shadow: 0px -1px 0px rgba(0,0,0,0.25); }
+.defaultbtn:hover{  background: #419a48; color:#FFF }
+
+.user_info{ padding:25px 20px;}
+.user_info .title{ font-size:30px;  line-height:30px;  padding-bottom:10px; color:#333; }
+
+.user_center{ padding:20px 0px;}
+.user_center ul li{float:left; width: 24%; border: 1px solid #eee;  margin: 0 10px 15px 0px;  display:block}
+.user_center ul li a{  text-align: center ; font-size:16px; display:block; background:#FFF;width: 100%;height: 150px; background:#fff; padding-top:20px; color:#333}
+.user_center ul li a:hover{ background: #204723; color:#FFF;height: 150px; display:block; width:100%;}
+.user_center li i{ font-size:60px; color: #ccc;}
+.user_center ul li a:hover i{ color:#FFF}
+.user_center  h2{font-size:30px;  line-height:40px;  padding-bottom:20px; color:#333;}
+
+.user_zhanghu{  padding:25px 20px; }
+.user_zhanghu  h2{font-size:30px;  line-height:40px;  padding-bottom:20px; color:#333;}
+.user_zhanghu  .font14{ font-size:14px;}
+.user_zhanghu  .money{ color:#C00; font-weight:bold; font-size:18px;}
+.table thead th{ text-align: center; background: #eae9e9 url(../images/tableHeaderBg.png) repeat-x 0 0; color: #667183; text-shadow: 0 1px 0 #fff; font-size:14px; border-right:2px solid #000 }
+
+.whitebg{ background:#f3f3f3; width:100%; padding:30px 0px; height:auto!important; min-height:380px; height:380px;}
+.whitebg .body_container{ background:#FFF ; border-radius:10px;}
+
+
+.nav{ width:781px; height:80px;  margin:0 auto; position:relative;} 
+.nav ul li{width:130px;height:80px; float:left;position:relative;z-index:100;}
+.nav ul li p { font-size:15px;text-align:center; }
+.nav ul li p a {color:#4c4c4c;line-height:80px; height:80px; display:block ;-webkit-transition: all;
+	transition: all;
+	-webkit-transition-duration: .4s;
+	transition-duration: .4s;}
+.nav ul li p a:hover {background:#204723; line-height:70px； color:fff; }
+.nav dl {width:130px;height:auto;background:url(../images/alpha.png) repeat;position:absolute;left:0;top:80px;z-index:101;display:none; z-index:9999999;}
+.nav dl dd {width:130px;height:35px;}
+.nav dl dd a {color:#fff;display:block;width:130px;height:35px;background:none;font:12px/30px "microsoft yahei";text-align:center; overflow:hidden;}
+.nav dl dd a:hover {background:#204723;}
+.nav ul li.navlast {background:none;}
+
+
+.bd{ width:100%;  border-top:1px solid #eee; border-bottom:1px solid #ccc ;box-shadow: 0 1px 3px #c8c8c8;}
+
+.search_btn{ padding:0px  0 10px 0;}
+.search_btn input{ display:inline-block; width:200px; margin-right:10px}
+.search_btn select{ display:inline-block; width:150px; margin-right:10px}
+.userdefaultbtn{background:#204723; color:#FFF; font-size: 12px; padding:5px 20px;  text-shadow: 0px -1px 0px rgba(0,0,0,0.25); }
+.userdefaultbtn:hover{  background: #419a48; color:#FFF }
+
+/** 充值成功  **/
+
+.chongzhibox{ width:70%; margin:0 auto; padding-bottom:30px;}
+.chongzhi_ok { font-size:16px; line-height:30px;  margin:0 auto;}
+.font24{ font-size:24px; font-weight:bold; color:#060; line-height:30px; padding-bottom:10px;}
+.f18{ font-size:18px; font-weight:bold;}
+.shengqingbtn2{padding:6px 10px; background: #204723; border: none; color:#FFF; font-size:15px;}
+.shengqingbtn2:hover{background: #419a48; color:#FFF}
+.redfont{ font-weight:bold; color:#C00;}
+
+.xiehuicheckbox{ font-size:14px; line-height:26px;}
+.xiehuicheckbox label{ padding-right:10px; padding-left:3px; font-weight:normal}
+.xiehuicheckbox .col-xs-4{ overflow:hidden; word-break:keep-all;           /* 不换行 */
+white-space:nowrap;          /* 不换行 */
+overflow:hidden;              /* 内容超出宽度时隐藏超出部分的内容 */
+ }
+.bord_d{ border-bottom:1px solid #CCC; line-height:35px; margin-bottom:10px;}
+
+
+
+/** 11-19 号新增  **/
+
+.jibencontent{ border:1px solid #fff; padding:20px 30px; width:650px; float:left; border-radius:10px;-moz-box-shadow:2px 2px 5px #aac5d6; -webkit-box-shadow:2px 2px 5px #aac5d6; box-shadow:2px 2px 5px #aac5d6; background:rgba(255,255,255,0.6); height:230px; }
+.user_content .moneybox{ border:1px solid #fff;width:400px; border-radius:10px; padding:30px 20px ; font-size:14px; text-align:left; line-height:40px; padding-right:40px;-webkit-box-shadow:2px 2px 5px #aac5d6; box-shadow:2px 2px 5px #aac5d6;background:url(../images/zhanghubg.png) right center no-repeat rgba(255,255,255,0.6); height:230px;}
+.user_font h2{ font-size:20px; padding-bottom:20px; }
+.user_font span{ padding:0px 15px; color:#CCC;}
+.user_font  .usernam{ color:#C00; }
+.moneybox h2{ font-size:20px; padding-bottom:10px; }
+.bordf{ border:1px solid #ede5ba; padding:10px; font-size:14px; margin-bottom:20px;}
+
+
+
+/** 2-17 号新增  **/
+
+.kaihu_table{ line-height:30px;}
+.kaihu_table td{ padding:5px 15px;}
+.kaihu_table input,.kaihu_table select{ width:250px; display:inline-block; margin-right:10px}.reginster_title {
+    line-height: 30px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2d522f;
+    padding-top: 10px;
+}
+
+.user_info .nav{ height:38px; width:100%;}
+.kaihu_btn { position:absolute; left:200px; top:0; border-radius:0 0 8px 8px;   font-size: 13px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+ 
+  cursor: pointer;
+    box-shadow: 0px 6px 0px #439230, 0px 10px 3px rgba(0,0,0,0.3);}
+
+.green1 {
+  background: #82cc5d;
+  background: -*-linear-gradient(to bottom,  #82cc5d 0%,#53b73c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82cc5d', endColorstr='#53b73c',GradientType=0 );
+  border: 1px solid #429E34;
+}
+
+.green1:hover {
+  background: #99cc80; color:#FFF;
+  background: -*-linear-gradient(to bottom,  #99cc80 0%,#53b73c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cc80', endColorstr='#53b73c',GradientType=0 );
+}
+.kaihu_btn a{  padding: 7px 20px 9px; text-shadow: 0 1px 1px rgba(0,0,0,0.4); display:block; color:#FFF}
+.kaihu_btn a:hover{ color:#FFF; text-shadow:none}
+
+.kaihu_table .col-xs-3{ width:210px; line-height:20px;}
