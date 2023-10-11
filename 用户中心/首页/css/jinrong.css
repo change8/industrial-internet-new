@@ -1,0 +1,391 @@
+@charset "utf-8";
+/* CSS Document */
+
+.nav2{ width:950px; height:80px;  margin:0 auto; position:relative;}
+.nav2 ul li{width:120px;height:80px; float:left;position:relative;z-index:100;}
+.nav2 ul li p { font-size:15px;text-align:center; }
+.nav2 ul li p a {color:#4c4c4c;line-height:80px; height:80px; display:block ;-webkit-transition: all;
+	transition: all;
+	-webkit-transition-duration: .4s;
+	transition-duration: .4s;}
+.nav2 ul li p a:hover {background:#204723; line-height:70px; color:fff; }
+.nav2 dl {width:120px;height:auto;background:url(../images/alpha.png) repeat;position:absolute;left:0;top:79px;z-index:101;display:none; z-index:9999999;}
+.nav2 dl dd {width:120px;height:35px;}
+.nav2 dl dd a {color:#fff;display:block;width:120px;height:35px;background:none;font:12px/30px "microsoft yahei";text-align:center; overflow:hidden;}
+.nav2 dl dd a:hover {background:#c8e2b3; color:#000}
+.nav2 ul li.navlast {background:none;}
+
+.mymoney{ position:absolute; top:30px; right:20px; font-size:14px;}
+.redfont{ }
+.leftnavlist{ width:220px;}
+.rightbanner{ width:960px;}
+
+/* TODO @lutz 幻灯片 */
+.mainScrollable2{background:#303940;height:300px;position:relative;overflow:hidden; width:960px;z-index:1;}
+/* flexslider */
+
+
+
+
+/* TODO @lutz 左侧导航 */
+#menu { background:#fff; height:300px; border:1px solid #CCC; }  
+#menu a{  
+text-decoration:none;  
+display:block;  
+}  
+#menu ul{  
+text-align:left; 
+}  
+#menu  
+.arrow{ /* 菜单项的右侧小箭头 */  
+float:right;  
+padding-right:10px; line-height:48px; font-size:10px;
+
+}  
+
+#menu>ul{height:30px;} /* 即使没有菜单项也能保持顶级菜单栏的高度。 */  
+/* 一级菜单 */  
+#menu>ul>li{  
+text-align:left; padding-left:30px;  
+display:block;  
+width:218px; position:relative; font-size: 14px;
+color: #808080;
+	border-bottom: 1px solid #c8c8c8;
+	-webkit-transition: background;
+	 transition: all;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+	height:50px;
+	line-height:50px;
+	border-radius: 0; background:#FFF; cursor:pointer
+
+}  
+#menu>ul>li>a{color:#808080;}  
+#menu>ul>li>a:hover{color:#fff;}  
+#menu>ul>li:hover{ background:#204723; color:#FFF}  
+/* 下拉的菜单栏 */  
+#menu>ul>li ul{  
+display:none;  
+width:150px;  
+position:absolute;  
+left:218px; top:0px; background:url(../images/alpha.png); 
+box-shadow:2px 2px 2px #000;  
+-webkit-box-shadow:2px 2px 2px #000;  
+-moz-box-shadow:2px 2px 2px #123; z-index:999999;
+}  
+
+/* 下拉菜单的菜单项 */  
+
+#menu>ul>li>ul li{padding-left:25px;  position:relative; line-height:40px;}  
+#menu>ul>li>ul li>a{color:#000;}  
+#menu>ul>li>ul li:hover{background:#c8e2b3; color:#000}  
+
+  
+
+/*  
+/* 省钱贷款 */  
+.jinrongbox{ background:#FFF; margin:25px 0px; box-shadow: 0px 2px 0px 0px #e5e5e5;}
+.font40{ font-size:18px; padding:250px 0px 0px 0px; text-align:center}
+.font14{font-size:14px; text-align:center; width:100%;}
+.wid220{ width:220px; background:#ccc; min-height:300px;  color:#fff;}
+.wid960{ width:960px;}
+.wid980{ width:980px;}
+.shengqian{ background:#ffabd2 url(../images/sheng.jpg) no-repeat top center;}
+.zhuanqian{ background:#ffabd2 url(../images/zhuan.jpg) no-repeat top center;}
+.shengqian{ background:#ffabd2 url(../images/sheng.jpg) no-repeat top center;}
+.baozhan{ background:#ffabd2 url(../images/bao.jpg) no-repeat top center;}
+.haowan{ background:#ffabd2 url(../images/wan.jpg) no-repeat top center;}
+.zhuanqian{ background:#ffabd2 url(../images/zhuan.jpg) no-repeat top center;}
+.bank-list{ padding:4px;}
+.bank-list .title{ color: #060}
+.bank-list ul li:hover.title { background:#FFF; cursor:default}
+.bank-list ul{ margin:0 auto; width:950px;}
+.bank-list ul li { width:295px;text-align:left; line-height:34px; font-size:14px; cursor:pointer; float:left; border-bottom:1px dashed #eee; margin-right:20px; }
+.bank-list ul li:hover{ background:#f3f3f3}
+.bank-list ul li span{  float:right;text-align:left; width:70px;  font-size:12px;}
+
+
+
+/* 保障产品列表 */
+.baozhanglist{}
+.baozhanglist ul li{ float:left; border-bottom:1px solid #e6e6e6; border-right:1px  solid #e6e6e6; width:196px; height:150px; text-align:center;  overflow:hidden; font-size:14px;}
+.baozhanglist ul li.noright{ border-right:0px;}
+.baozhanglist ul li.nobottom{ border-bottom:0px;}
+.baozhanglist ul li .box{ background: #FFF; height:150px; position:relative;z-index:10;overflow:hidden; cursor:pointer; line-height:24px;}
+.icon-cate{display:block;width:150px;height:100px;margin:10px auto 0;  text-align:center; background: #fff;}
+.join-item{ position:relative; height:150px; overflow:hidden;}
+.baozhanglist ul li .join-hover {
+	background: #204723;
+	position:absolute;
+	z-index:20;
+	top:150px;
+	left:0;
+	color:#fff;
+	text-align:center;
+	padding:10px;
+	width:196px;
+	height:150px; overflow:hidden; 
+}
+.join-item .join-info {
+	text-align:left; font-size:12px;
+	
+}
+.join-item .join-look {
+	width:108px;
+	height:28px;
+	display:block;
+	text-align:center;
+	line-height:28px;
+	border:1px solid #fff;
+	color:#fff;
+	margin:0 auto;
+	margin-top:10px
+}
+.join-item .join-look:hover {text-decoration:none;color:#333; background:#FFF}
+
+
+/* 众筹产品列表 */
+.focus-box {
+	padding: 10px 0px 0px;
+}
+.focus-box .focus-con {
+	
+	overflow: hidden;
+}
+.focus-box .focus-con li {
+	float: left;
+	padding: 0 22px 20px 0;
+	position: relative;
+}
+
+.focus-box .focus-con li.last{ padding-right:0px;}
+.list-item {
+	width: 220px;
+	border: 1px solid #e4e4e4;
+	overflow:hidden; background:#FFF;
+}
+.list-item a {
+	}
+.list-item a.item-figure {
+	display:block;
+	width: 220px;
+	height:175px;
+	overflow:hidden;
+}
+.list-item a img {
+	width: 220px;
+	height:165px;
+	-webkit-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.list-item a:hover img {
+	-webkit-transform:scale(1.04);
+	-moz-transform:scale(1.04);
+	-o-transform:scale(1.04);
+	transform:scale(1.04);
+}
+.list-item .z-lump {
+	padding: 0 10px 5px 10px;
+
+}
+.list-item .z-lump h2 {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 10px 0 5px 0;
+	height: 28px;
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+.list-item .z-lump h2 a {
+	-webkit-transition: all 0.8s ease;
+	-moz-transition: all 0.8s ease;
+	-o-transition: all 0.8s ease;
+	transition: all 0.8s ease;
+}
+.list-item .z-lump h2 a:hover {
+	color: #666;
+}
+.list-item .z-lump p.z-raising {
+	font-size: 12px;
+	color: #999;
+}
+.list-item .z-lump p.z-raising em {
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+}
+.list-item .z-lump p.z-raising i {
+	font-size: 14px;
+	color: #900;
+	font-weight: bold; font-style:inherit;
+}
+.list-item .z-lump .progress-bar {
+	width: 200px;
+	height: 10px;
+	line-height: 0px;
+	font-size: 0px;
+	background: #eaeaea;
+	overflow: hidden;
+	margin: 4px 0; border-radius: 4px ;
+}
+.list-item .z-lump .progress-bar span {
+	background: #060;
+}
+.list-item .z-lump .progress-bar span.progress {
+	height: 10px;
+	line-height: 0px;
+	font-size: 0px;
+	display: block;
+}
+.list-item .z-lump .item-rate span.rate1 {
+	float: left;
+	color: #333;
+}
+.list-item .z-lump .item-rate span.rate2 {
+	float: right;
+	color: #999;
+}
+
+.linklogo{ margin:0 auto; text-align:left; background:#FFF; padding:10px;}
+.linklogo ul li{ width:16.666666%; height:80px; float:left; background:#fff; border:1px solid #e5d9d9; margin:0px -1px -1px 0px; text-align:center; vertical-align:middle;}
+.linklogo ul li .linglogo_item{ overflow:hidden; width:100% ; height:100%; border-style: solid; cursor:pointer;
+    border-width: 5px;
+    border-color: rgb( 255, 255, 255 );
+    background-color: rgb( 255, 255, 255 );
+    -webkit-transition: border-color .3s;
+    transition: border-color .3s; }
+.linklogo ul li .linglogo_item:hover{border-color: #f0f0f0;}
+
+.icon-cate4{display:block;width:150px;height:60px;margin:5px auto 0; background:#FFF;}
+.icon-cate4 img{ max-width:150px; max-height:60px;}
+
+
+
+/* 第e众筹*/
+.type-list{ padding:16px 20px; background:#FFF; border:1px solid #e4e4e4}
+.type-list ul li.li-font{ color:#333; margin-right:10px;}
+.type-list ul li{ float:left;}
+.type-list ul li a{ display:inline-block; margin-right:30px;}
+.type-list ul li a:hover{ color:#C00}
+
+/* 第e理财*/
+.fonttitle{ font-size:20px; color:#333; line-height:40px;}
+.tesepro { margin:20px 0px;}
+.tesepro .col-xs-4{ padding-left:0px; padding-right:20px;}
+.tesepro .col-xs-4.last{ padding-right:0px;}
+.tesepro .col-xs-4 .sItem{
+    height: 260px;
+    display: block;
+    padding: 12px 25px;
+    border-style: solid;
+    border-width: 6px;
+    border-color: rgb( 255, 255, 255 );
+    background-color: rgb( 255, 255, 255 );
+    -webkit-transition: border-color .3s;
+    transition: border-color .3s;
+    overflow: hidden;
+}
+.tesepro .col-xs-4 .sItem:hover{
+    border-color: #d8d8d8;
+    box-shadow: 0px 0px 0px 0px rgb( 160, 160, 160 );
+}
+.tesepro .sItem .sItemCont h2.itemTitle{ display:block; font-size: 16px; color: #333; margin: 5px 0 7px 0;}
+.tesepro .sItem .sItemCont .pic{ width:100%; text-align:center; padding:10px 0px;}
+.tesepro .sItem .sItemCont img{ margin-top: 15px; margin-bottom: 15px;}
+.tesepro .sItem .sItemCont p.itemInfo{ font-size: 14px; color: #454545; line-height: 1.2; text-align: center; padding-top:15px; }
+.tesepro .sItem .sItemCont p.itemInfo .leftQuo{display:block ; background: url(images/leftQuo.png) no-repeat 0 0; height: 26px; text-indent: -9999px;}
+.tesepro .sItem .sItemCont p.itemInfo .rightQuo{display:block ; background: url(images/rightQuo.png) no-repeat 100% 0; height: 30px; text-indent: -9999px; }
+.tesepro .sItem .sItemContHover{display: none; margin-top: 10px; position:relative;}
+.tesepro .sItem .sItemContHover .itemDetail{ font-size: 14px; line-height: 1.6; color: #808080; overflow: hidden; height: 173px; letter-spacing: 1px;}
+
+.buyBtn{padding:8px 25px; background: #204723; border: none; color:#FFF }
+.buyBtn:hover{background: #37973e; color:#FFF}
+.hotpro{ width:100px; background: #FC0; text-align:center; font-size:30px; height:100%; height:150px; padding:30px 0px 0px 0px; color:#FFF}
+.greenbg{ background:#090}
+.hotprolist{ width:1100px;}
+.hotprolist ul li{ float:left; border-bottom:0px solid #e6e6e6; border-right:1px  solid #e6e6e6; width:25%; height:150px; text-align:center;  overflow:hidden; font-size:14px;}
+.hotprolist ul li.noright{ border-right:0px;}
+.hotprolist ul li.nobottom{ border-bottom:0px;}
+.hotprolist ul li .box{ background: #FFF; height:150px; position:relative;z-index:10;overflow:hidden; cursor:pointer; line-height:24px;}
+.join-item{ position:relative; height:150px; overflow:hidden;}
+.hotprolist ul li .join-hover {
+	background: #204723;
+	position:absolute;
+	z-index:20;
+	top:150px;
+	left:0;
+	color:#fff;
+	text-align:center;
+	padding:10px;
+	width:100%; 
+	height:150px; overflow:hidden; 
+}
+.join-item .join-info {
+	text-align:left; font-size:12px; padding:5px;
+	
+}
+.join-item .join-look {
+	width:108px;
+	height:28px;
+	display:block;
+	text-align:center;
+	line-height:28px;
+	border:1px solid #fff;
+	color:#fff;
+	margin:0 auto;
+	margin-top:10px
+}
+.join-item .join-look:hover {text-decoration:none;color:#333; background:#FFF}
+
+
+/*第e保险*/
+.baoxiantitle{ font-size:24px; line-height:35px; font-weight:bold; position:relative; }
+.baoxiantitle .more{ position:absolute; top:5px; right:20px; font-size:12px; font-weight:normal}
+.baoxianpro { margin:10px 0px 20px 0px;}
+.baoxianpro .col-xs-3{ padding-left:0px; padding-right:20px;}
+.baoxianpro .col-xs-3.last{ }
+.baoxianpro .col-xs-3 .sItem{
+    height: 330px;
+    display: block;
+    padding: 12px 25px;
+    border-style: solid;
+    border-width: 6px;
+    border-color: rgb( 255, 255, 255 );
+    background-color: rgb( 255, 255, 255 );
+    -webkit-transition: border-color .3s;
+    transition: border-color .3s;
+    overflow: hidden;
+}
+.baoxianpro .col-xs-3 .sItem:hover{
+    border-color: #d8d8d8;
+    box-shadow: 0px 0px 0px 0px rgb( 160, 160, 160 );
+}
+.baoxianpro .sItem .sItemCont h2.itemTitle{ display:block; font-size: 16px; color: #333; margin: 5px 0 7px 0; font-weight:bold;}
+.baoxianpro .sItem .sItemCont .pic{ width:100%; text-align:center; padding:5px 0px;}
+.baoxianpro .sItem .sItemCont img{ margin-top: 15px; }
+.baoxianpro .sItem .sItemCont p.itemInfo{ font-size: 12px; color: #454545; line-height: 20px;  padding-top:15px; }
+.baoxianpro .sItem .sItemCont p.itemInfo .leftQuo{display:block ; background: url(images/leftQuo.png) no-repeat 0 0; height: 26px; text-indent: -9999px;}
+.baoxianpro .sItem .sItemCont p.itemInfo .rightQuo{display:block ; background: url(images/rightQuo.png) no-repeat 100% 0; height: 30px; text-indent: -9999px; }
+.baoxianpro .sItem .sItemContHover{display: none; margin-top: 10px; position:relative;}
+.baoxianpro .sItem .sItemContHover .itemDetail{ font-size: 13px; line-height:24px; color: #808080; overflow: hidden; height:100%;letter-spacing: 1px;}
+.baoxianpro .product-price{ font-size:22px; color:#C00;}
+.baoxianpro .product-price span{ font-size:12px; color:#999}
+.baoxianpro .bord{ border-bottom:1px solid #eee; width:100%; padding-top:5px;}
+
+
+
+/* 第e贷款*/
+.daikuaititle{ font-size:18px; line-height:40px; font-weight:bold;}
+.daikuanlist{ margin:20px 0px;}
+.daikuanlist li{ margin-bottom: 28px; width:372px; float:left; margin-right:40px;background-color: #fff; padding: 10px;  max-height: 345px; box-shadow: 1.5px 1.5px 0 #cac6c5, -1.5px -1.5px 0 #cac6c5, -1.5px -1.5px 0 #cac6c5, -1.5px 1.5px 0 #cac6c5, 1.5px -1.5px 0 #cac6c5; height:310px; overflow:hidden;  transition: all 400ms ease-in-out;}
+.daikuanlist li:hover{transform: translate(-9px, -9px); box-shadow:1.5px 1.5px 0 #204723, 0px 1.5px 0 #204723, -1.5px -1.5px 0 #204723, -1.5px -1.5px 0 #204723, -1.5px 1.5px 0 #204723, 1.5px -1.5px 0 #204723, 0.77782px 0.77782px 0 #aaaaaa, 1.55563px 1.55563px 0 #aaaaaa, 2.33345px 2.33345px 0 #aaaaaa, 3.11127px 3.11127px 0 #aaaaaa, 3.88909px 3.88909px 0 #aaaaaa, 4.6669px 4.6669px 0 #aaaaaa, 5.44472px 5.44472px 0 #aaaaaa, 6.22254px 6.22254px 0 #aaaaaa, 7.00036px 7.00036px 0 #aaaaaa, 7.77817px 7.77817px 0 #aaaaaa; }
+.daikuanlist li.last{ margin-right:0px;}
+.daikuanlist li .logo{ width:90px;}
+.daikuanlist li .jieshao{ width:260px; line-height:22px;}
+.daikuanlist li .jieshao .tiaojianleft{ width:60px;}
+.daikuanlist li .jieshao .tiaojianright{ width:190px; height:130px; overflow:hidden}
+.daikuanlist li .jieshao .money{ color:#C00; font-size:14px; font-weight:bold}
+.daikuanlist .bord{ border-top:1px solid #eee; width:100%; padding-top:5px;}

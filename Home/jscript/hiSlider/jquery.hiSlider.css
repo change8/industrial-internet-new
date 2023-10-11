@@ -1,0 +1,69 @@
+/* jquery.hiSlider.css */
+.hiSlider-pages,
+.hiSlider-title{
+    position: absolute;
+    z-index: 3;
+}
+banner li{ text-align: center}
+banner .hiSlider-btn-prev{ left: 50%; margin-left: -620px;}
+banner .hiSlider-btn-next{ right: 50%; margin-right: -620px;}
+.hiSlider-btn-prev,.hiSlider-btn-next{
+
+    width: 64px; height: 64px; position: absolute; top: 50%; margin-top: -32px; text-indent: -200px; overflow: hidden; border-radius: 32px; border: 1px solid #fff; display: block; z-index: 6;
+; filter:alpha(opacity=60); -moz-opacity:0.6;opacity:0.6;
+}
+
+.hiSlider-btn-prev{
+    background: url("images/left.png"); background-position: -2px 0px;
+    left: 10px;
+}
+.hiSlider-btn-next{
+    background: url("images/right.png"); background-position: 2px 0px;
+    right: 10px;
+}
+.hiSlider-btn-prev:hover,
+.hiSlider-btn-next:hover{
+    opacity: 1;
+    filter:alpha(opacity:100);
+}
+.hiSlider-title{
+    bottom: 0;
+    width: 100%;
+    padding: 6px 0;
+    color: #fff;
+    text-indent: 10px;
+    background: rgba(0,0,0,.6);
+    z-index: 2;
+    font: 14px/2 "Microsoft YaHei", "Arial", "Tahoma"
+}
+.hiSlider-pages{
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+}
+.hiSlider-pages a{
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -100px;
+    font-size: 0;
+    border-radius: 50%;
+    background: #ddd;
+}
+.hiSlider-pages a.active{
+    background: #5472BF;
+}
+
+/*banner*/
+.hiSlider{
+    overflow: hidden;
+    height: 500px;
+    width: 100%;
+}
+.hiSlider-item
+.hiSlider-item{
+    float: left;
+    text-align: center !important;
+}

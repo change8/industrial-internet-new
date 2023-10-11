@@ -1,0 +1,43 @@
+/***
+Error Pages
+***/
+
+
+body{ margin: 0 auto; font-size:12px; color: #666;line-height:24px; font-family:"Microsoft Yahei"}
+
+
+.Construction {
+  background:  url(../images/bg3.jpg); padding-left:100px;
+} 
+
+.Construction .page-inner img {
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.Construction .content {
+  color: #0278c2;
+  text-align: left;
+  padding: 150px 20px 0 100px;
+}
+
+.Construction h1 {
+  color: #0278c2;
+  font-size: 80px;
+  line-height: 140px;  
+}
+
+.Construction h2 {
+  color: #0278c2;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.Construction p {
+  color: #0278c2;
+  font-size: 14px;
+}
+
+

@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**关于大数据**/
+.font38{ font-size:38px; line-height:40px; color:#333; padding-bottom:30px;}
+.whitefont{ color:#FFF}
+.box{ width:100%; padding:35px 0px; font-size:14px; height:auto!important;  min-height:400px;height:400px; color:#8d9095; min-width:1200px;}
+.box_font{ width:700px; font-size:14px; line-height:28px; }
+.box_img{ }
+.b1_bg { background:#f8f8f8; border-bottom:1px solid #e7e7e7; border-top:1px solid #e7e7e7;}
+.b2_bg { background:#fff}
+.b3_bg{ background:#1570a6; color:#FFF}
+
+/**研究报告**/
+.yanjiu_center1{ background:#f3f3f3; border-top:1px solid #ccc;border-bottom:1px solid #ccc; width:100%; padding:20px 0px; min-width:1200px;}
+.yanjiu_center2{ background:#fff;  width:100%; padding:20px 0px; min-width:1200px;}
+.summary{ margin-bottom: 5px; position:relative }
+.summary h1 a{font-size: 20px; font-weight: normal; color:#121212;}
+.summary h1 a:hover{color: #090; text-decoration: none;}
+.summary h1 span.label{margin-left: 10px; font-weight: normal; padding: .2em .6em;}
+.summary p{color:#666; font-size: 14px; margin: 12px 0;}
+.pagination li a{ margin: 0 5px; border: none;}
+.summary .contentfont{ line-height:24px; font-size:14px;}
+.summary  .thumbnail{ height:200px; margin-bottom:0px}
+.summary  .thumbnail.nopic{ background: url(../images/nopic.png) center 50px no-repeat #f0f0f0; padding-top:130px; font-weight:bold; font-size:18px; text-align:center; color:#999}
+.summary  .thumbnail img{ max-height:190px; width:auto;}
+.summary .downl{ position:absolute; right:0px; bottom:2px;}
+
+/**研究中心**/
+.subNavBg{
+    background:-webkit-linear-gradient(left,#fff 50%,#f3f3f3 50%);
+    background:-moz-linear-gradient(left,#fff 50%,#f3f3f3 50%);
+    background:-ms-linear-gradient(left,#fff 50%,#f3f3f3 50%);
+    background:-o-linear-gradient(left,#fff 50%,#f3f3f3 50%);
+     min-width:1200px; width:100%; 
+	 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#f3f3f3',gradientType=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#f3f3f3,gradientType=1)";
+}
+
+.wid800{ width:900px; background:#FFF; height:auto!important; min-height:400px; height:400px;}
+.wid300{ width:300px; background:#f3f3f3; height:auto!important; min-height:400px; height:400px;}
+.yanjiunewlist{ padding-right:35px; padding-top:10px;}
+.yanjiunewlist .summary{ margin-bottom: 20px; border-bottom:1px dashed #eee; max-height:150px; overflow:hidden; color:#888; padding:5px;}
+.yanjiunewlist .summary:hover{ background:#fafafa; cursor:pointer}
+.yanjiunewlist .summary h1 a{font-size: 18px; font-weight: normal; color:#060}
+.yanjiunewlist .summary h1 a:hover{color: #090; text-decoration: none;}
+.yanjiunewlist .summary h1 span.label{margin-left: 10px; font-weight: normal; padding: .2em .6em;}
+.yanjiunewlist .summary p{color:#888; font-size: 14px; margin: 5px 0;}
+
+.yanjiutitle{ font-size:24px; line-height:40px; border-bottom:1px solid #CCC; font-weight:bold; margin-bottom:10px; position:relative}
+.yanjiunewlist .more{ position:absolute; top:5px; right:10px; font-size:12px; font-weight:normal}
+
+
+.dongtailist{ margin:20px 0px;}
+.dongtailist ul{}
+.dongtailist ul li{ width:410px; height:290px; border:1px solid #eee; float:left; margin-right:25px; text-align:center; padding:10px; line-height:28px;}
+.dongtailist ul li.last{ margin-right:0px;}
+.dongtailist .tubiao{ width:380px; height:250px; margin:0 auto; background:#f0f0f0; overflow:hidden;}
+
+
+#data-list{ padding:4px;}
+#data-list ul{ margin:0 auto; }
+#data-list ul li { width:270px;text-align:left; line-height:40px; font-size:14px; cursor:pointer; border-bottom: 1px dashed #c8c8c8;}
+#data-list ul li a{  color: #808080; }
+#data-list ul li span{  float: right;text-align:left; width:80px;  font-size:12px;}
+.data-title{ display:block;}
+.mask{ display:none; background:#FFF; padding:5px;}

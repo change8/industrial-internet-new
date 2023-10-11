@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+.whitebg{ background:#FFF; border-bottom:1px solid #CCC; width:100%; min-width:1200px;}
+.aboutustitle{ font-size:24px; color:#373a41; padding-top:15px; font-weight:bold;}
+.aboutuscontent{ border-bottom:1px solid #eee; margin-bottom:20px; padding:15px 0px 30px 0px;}
+.aboutuscontent .box_img{ width:370px; border:1px solid #ddd ; box-shadow: 0px 1px 1px 0px rgba(202, 202, 202, 0.8); padding:10px; text-align:center}
+.aboutuscontent .box_img img{ max-width:350px}
+.aboutuscontent .box_font{ width:800px; font-size:14px; line-height:24px; color:#8d9095}
+
+.map{ border:1px solid #ddd; box-shadow: 0px 1px 1px 0px rgba(202, 202, 202, 0.8); border-radius:4px; padding:10px; margin-bottom:20px; text-align:center;}
+
+
+.job-list{ padding:4px;}
+.job-list ul{ margin:0 auto;}
+.job-list ul li { width:780px;text-align:left; line-height:34px; font-size:14px; cursor:pointer; border-bottom:1px dashed #CCC }
+.job-list ul li span{  float:right;text-align:left; width:90px;  font-size:12px;}
+.job-title{ display:block;}
+.job-detail{display:none; background:#eee; padding:10px; line-height:22px;}
+
+
+
+/******成为合作商   ******/
+.Cooperbusinessbox{ padding:15px 0;}
+.Cooperbusinessbox .aboutustitle{ font-size:26px; color:#373a41; padding-top:25px; font-weight:bold;}
+.Cooperbusinessbox .top{ background: url(../images/top_bg.jpg) no-repeat; height:100px; width:1200px; }
+.Cooperbusinessbox .centerbg{ background:url(../images/right_bg.jpg) repeat-y right; border-left:1px solid #ebe2e2; padding:0 30px 0 20px;  font-size:14px; line-height:28px; color:#666; }
+.Cooperbusinessbox .centerbg .hhlogo{ text-align:right; padding-right:30px; padding-top:0px;}
+.Cooperbusinessbox .bottombg{ background:url(../images/bottom_bg.jpg) no-repeat; height:19px;}
+.Cooperbusinessbox .bottomgg{ background: url(../images/bottom_gg.jpg) no-repeat bottom center; height:233px; }
+
+
+/******关于我们   ******/
+.huibg{ background:#f8f8f8;  width:100%; min-width:1200px;}
+.aboutbox{ font-size:14px; line-height:24px;}
+.aboutustitle2{ font-size:24px; color:#373a41; padding:15px 0; font-weight:bold;}
+.aboutustitle3{ color:#f96e57; font-size:16px; line-height:30px;}
+.aboudfunction{ width:640px;padding-bottom:10px;}
+.aboudfunction .Functionlist{ width:225px;}
+.aboudfunction .Functionlist ul{ padding-top:10px;}
+.aboudfunction .Functionlist li{ float:left; width:100px; margin-right:10px; background:#e2e3e1; margin-bottom:20px; text-align:center; line-height:28px;}
+.aboudfunction .Functionlist li a{ display:block; transition: all 200ms ease-in-out;}
+.aboudfunction .Functionlist li a:hover{ background:#8ec965; color:#FFF}
+.aboudfunction .Functionlist li:hover{ background:#8ec965; color:#FFF}
+.aboudfunction .funcchart{ width:410px; position:relative}
+.aboudfunction .funcchart .tanbox{ border-radius:4px; padding:5px; background: url(../images/alpha.png); position:absolute; color:#FFF; width:240px; font-size:12px; line-height:20px; display:none}
+.aboudfunction .funcchart .pos1{ top:-10px; left:-80px;}
+.aboudfunction .funcchart .pos2{ top:0px; right:-100px;}
+.aboudfunction .funcchart .pos3{ top:70px; right:-150px;}
+.aboudfunction .funcchart .pos4{ top:160px; right:-160px;}
+.aboudfunction .funcchart .pos5{ top:250px; right:-80px;}
+.aboudfunction .funcchart .pos6{ top:250px; left:-80px;}
+.aboudfunction .funcchart .pos7{ top:160px; left:-140px;}
+.aboudfunction .funcchart .pos8{ top:70px; left:-140px;}
+.aboudfunction .funcchart .jiantou{ position:absolute; background:url(../images/arowup.png) no-repeat; width:13px; height:10px; }
+.jiantou1{right:-5px; top:20px;}
+.jiantou2{left:-6px; top:10px; }
+.jiantou3{left:8px; top:-6px; }
+.jiantou6{right:8px; top:-6px; }
+.jiantou7{right:-5px; top:10px; }
+.Corporateculture{ width:540px; background:url(../images/about_wenhua.jpg) right center no-repeat; line-height:35px; min-height:240px;  border-left:1px solid #e8dbdb; padding-left:20px; }
+
+
+/***大事记****/
+.bigeventbox{ background: url(../images/time_bg.jpg) repeat-x bottom center #FFF; width:100%; min-width:1200px; padding-bottom:90px;}
+.progresslist{ padding-top:30px; position:relative  }
+.progresslist li{ font-size:14px; height:auto;  background: url(../images/timelin.png) center top no-repeat; position:relative ;  padding-bottom:20px; clear:both} 
+.progresslist li.last{ font-size:14px; height:auto;  background: url(../images/timelin2.png) center top no-repeat; position:relative ;  padding-bottom:20px; clear:both} 
+/*.progresslist li span{ height:25px; line-height:20px; display:block; padding-left:23px; position:absolute; left:-130px; top:0px; color:#adaaaa}
+.progresslist li p{ height:auto; line-height:24px; overflow:hidden; margin-left:7px; padding-left:14px;}*/
+.progresslist li .leftcont{line-height:20px; width:580px; border:1px solid #ddd; border-radius:4px; padding:6px; box-shadow:0px 1px 0px 0px rgba(202,202,202,0.8) }
+.progresslist li .leftcont .timetitle{ font-size:14px;  color:#666; position:absolute; left:620px; top:0px;}
+.progresslist li .leftcont  .timearrow{ width:12px; height:13px; background:url(../images/time_arrow.jpg) no-repeat; position:absolute; left:579px; top:6px; display:block}
+.progresslist li .rightcont{line-height:20px; margin-left:620px; width:580px;border:1px solid #ddd; border-radius:4px;  padding:6px;box-shadow:0px 1px 0px 0px rgba(202,202,202,0.8)   }
+.progresslist li .rightcont  .timearrow{ width:12px; height:13px; background:url(../images/time_arrow2.jpg) no-repeat; position:absolute; right:579px; top:6px; display:block}
+
+.progresslist li .rightcont .timetitle{ font-size:14px;  color:#666; position:absolute; right:620px; top:0px;}
+.progresslist li .zhe{ width:20px;background: #fff; position:absolute; left:590px; top:17px; display:block; height:auto;}
+.progresslist .arrow{ width:20px; background: url(../images/arrowup.jpg) no-repeat #FFF; height:18px;  position:absolute; left:112px; top:13px; z-index:10;}
+.eventmore a{ width:70px; background: #f96e57; color:#FFF; text-align:center; font-size:12px; line-height:32px; margin:0 auto; display:block; margin-bottom:20px }
+.eventmore a:hover{ background:#e43215; text-decoration:underline}
+
+/***团队建设****/
+.teambox{ background:url(../images/team_bg.jpg) center center no-repeat #d8d8d8; padding-bottom:20px; height:360px;}
+#four_flash{position:relative;width:1200px;height:400px; margin:0 auto; padding-top:10px;}
+#four_flash .flashBg{width:1180px;height:400px; margin:0 auto;position:relative;overflow:hidden;}
+#four_flash .flashBg ul.mobile{width:2000%;height:400px; position:absolute;top:15; left:0;}
+#four_flash .flashBg ul.mobile li{float:left;width:270px;height:300px;margin: 0 13px;padding-top:8px;color:#6C6E85; }
+#four_flash .flashBg ul.mobile li p{ margin:0 auto;border:1px solid #f0f0f0; padding:5px; background:#FFF}
+#four_flash .flashBg ul.mobile li p:hover{border:1px solid #8fc965;}
+#four_flash .flashBg ul.mobile li img{ display:block; margin:0 auto;  }
+#four_flash .flashBg ul.mobile li dd{font-size:14px;line-height:24px;text-align:center; padding-top:2px;}
+#four_flash .but_left{width:50px;height:100px;position:absolute; top:80px; left:-30px; cursor:pointer}
+#four_flash .but_right{width:50px;height:100px; position:absolute; top:80px; right:-30px;cursor:pointer}
+#four_flash .but_left:hover{background: url(../images/l.png) no-repeat;}
+#four_flash .but_right:hover{background: url(../images/r.png)  no-repeat;}
+/**团队风采**/
+#five_flash{position:relative;width:1200px;height:400px; margin:0 auto; padding-top:10px;}
+#five_flash .flashBg{width:1180px;height:400px; margin:0 auto;position:relative;overflow:hidden;}
+#five_flash .flashBg ul.mobile{width:2000%;height:400px; position:absolute;top:15; left:0;}
+#five_flash .flashBg ul.mobile li{float:left;width:270px;height:300px;margin: 0 13px;padding-top:8px;color:#6C6E85; }
+#five_flash .flashBg ul.mobile li p{ margin:0 auto;border:1px solid #f0f0f0; padding:5px; background:#FFF}
+#five_flash .flashBg ul.mobile li p:hover{border:1px solid #8fc965;}
+#five_flash .flashBg ul.mobile li img{ display:block; margin:0 auto;  }
+#five_flash .flashBg ul.mobile li dd{font-size:14px;line-height:24px;text-align:center; padding-top:2px;}
+#five_flash .but_left{width:50px;height:100px;position:absolute; top:80px; left:-30px; cursor:pointer}
+#five_flash .but_right{width:50px;height:100px; position:absolute; top:80px; right:-30px;cursor:pointer}
+#five_flash .but_left:hover{background: url(../images/l.png) no-repeat;}
+#five_flash .but_right:hover{background: url(../images/r.png)  no-repeat;}
+
+.team-list-nav{ width:100%;  height:60px; border-bottom: 2px solid #ccc; }
+.team-list-nav ul{ }
+.team-list-nav li{color:#666;  line-height: 60px;  float:left; display:block; width:15%; cursor:pointer;   border-right: }
+.team-list-nav li a{ display:block;  color:#666; text-align:center; text-shadow:0px 1px 0px #fff ;font-size: 20px; font-weight:bold; }
+.team-list-nav .active a,.team-list-nav .active a:hover{  height:60px;   display:block; background:url(../images/yello_jiant.png) center bottom no-repeat; color: #090;  }
+.team-list-nav  li:hover,
+.team-list-nav  li:focus {
+    text-decoration: non
+    background-color: ;
+}
+
+
+/***招聘****/
+.f16{ font-size:16px; color:#333}
+.job-daiyu{ padding:15px 0 0 0;}
+.job-daiyu ul{ margin:0 auto;}
+.job-daiyu ul li { width:780px;text-align:left; line-height:34px; font-size:14px; cursor:pointer; color:#666}
+.job-daiyu ul li span{text-align:left; width:90px;  font-size:12px; width:13px; height:14px; display:inline-block; vertical-align:middle; font-weight:bold; color:#FFF; padding-left:3px; text-indent:0px; background:url(../images/numbenr.gif) no-repeat center center; line-height:14px; font-size:11px; margin-right:10px;}
+.job-daiyu ul li b{ color:#F30; font-weight:normal}

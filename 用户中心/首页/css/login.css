@@ -1,0 +1,104 @@
+.mainCopyright.fixed{position: absolute; bottom: 0; width: 100%;}
+.login_header{height:80px; border-bottom:1px solid #ddd;background:#FFF }
+.login_header .top-center{ width:1200px; margin:0 auto; }
+.login_header .top-center img{ vertical-align:middle;} 
+.login_header .top-center  .logo { font-size:28px;  }
+.login_header .top-center  .logo .font1{ border-left:1px solid #CCC; padding-left:20px;}
+.container_bg{ padding:0px; background:#f3f3f3; border-bottom: 1px solid #dfdfdf}
+.loginBox{ width:1200px; margin:0px auto; padding:30px 0px; }
+.loginBox .panel{border: none; box-shadow: none; margin-bottom:0px;}
+.loginBox .panel-heading{  padding: 15px 10px; border:1px solid #dfdfdf;}
+.loginBox .panel-heading h2{ font-size: 24px; }
+.loginBox .panel-heading h2 span{ font-size: 14px; float: right; margin-top: 20px;}
+.loginBox .panel-heading h2 span a{ margin-left: 5px;}
+.loginBox .panel-heading small{ letter-spacing: 1px; color: #959595;}
+.loginBox .panel-heading small a{color: #666;}
+.loginBox .panel-heading small a:hover{color: #121212;}
+.loginBox .panel-body{  border:1px solid #dfdfdf;margin-bottom:5px;box-shadow:0 12px 15px -10px #ccc;-moz-box-shadow:0 12px 15px -10px #ccc;-webkit-box-shadow:0 12px 15px -10px #ccc;}
+.loginBox .alert-warning{width: 253px; border-color:#E3C823; background-color:#FFF9D7; color:#CC6602; border-radius:0; padding: 10px 15px;}
+
+.loginBox .leftcontent{ width:650px; float: left}
+.loginBox .rightcontent{ width:450px; float: right; border-left: 1px solid #c8c8c8; padding-left: 30px;}
+
+.RCode{cursor:pointer; background: #f0f0f0; height: 35px; float: left;}
+.user{ background: url(../images/user.png) no-repeat 7px 50%; padding-left: 27px;}
+.pwd{background: url(../images/pwd.png) no-repeat 8px 50%; padding-left: 27px;}
+
+.loginBox .col-xs-5{}
+.lgForm{width: 253px;}
+.lgForm .form-group{position: relative;}
+.lgForm .help-inline{position: absolute; top: 9px; right: -300px; width: 300px; color: #aaa;}
+.lgForm .help-inline{right: -200px; width: 190px;}
+.lgForm .help-inline.text-danger{color: #a94442;}
+.lgForm .help-inline.text-success{color: #3c763d;}
+.lgForm .loginBtn{ padding:10px 15px; background: #29512f; color: #fff; border: none; margin-top: 20px; font-size: 14px; font-weight: bold; width:100px; display:inline-block; margin-right:10px;}
+.lgForm .loginBtn:hover{ background: #247c2b; }
+
+ .defaultBtn{  background: #29512f; color: #fff; }
+ .defaultBtn:hover,.defaultBtn:focus{ background: #247c2b; color:#FFF }
+
+.lgForm .zhuceBtn{ padding:10px 15px; background: #2e4d63; color: #fff; border: none; margin-top: 20px; font-size: 14px; font-weight: bold; width:100px; display:inline-block; margin-right:10px;}
+.lgForm .zhuceBtn:hover{ background: #3181b9; }
+
+.regForm .regBtn{ padding:10px 15px; background: #29512f; color: #fff; border: none; margin-top: 20px; font-size: 14px; font-weight: bold; width:100px;}
+.regForm .regBtn:hover{ background: #247c2b; }
+
+.regForm .help-inline{position: absolute; top: 9px; right: -300px; width: 300px; color: #aaa;}
+.regForm .help-inline{right: -310px; width: 300px;}
+.regForm .help-inline.text-danger{color: #a94442;}
+.regForm .help-inline.text-success{color: #3c763d;}
+
+.regForm font{position: absolute; top: 9px; right: -300px; width: 300px; color: #aaa;}
+.regForm font{right: -310px; width: 300px;}
+.regForm font .error{color: #a94442;}
+
+.regRt{}
+.regRt h2{font-size: 18px; font-weight: bold; margin: 50px 0; }
+.regRt dl{ margin: 50px 100px; text-align: left;}
+.regRt dt{ font-size: 16px; font-weight: normal; margin-bottom: 10px; float:left; padding:0px 25px 0x 0px; width:80px;}
+.regRt dd{ font-size: 14px; font-weight: normal; line-height:24px;}
+
+
+
+.regbox{ width:70%; margin:0 auto;}
+.reginster_title{ line-height:30px; border-bottom:1px solid #eee; font-size:14px; font-weight:bold; margin-bottom:10px; color:#2d522f; padding-top:10px;}
+.redfont{ color:#C00; padding-left:5px;}
+.tableline{ line-height:45px;}
+.tableline input{ display:inline-block; margin-right:7px; width:300px;}
+.tableline  select{ display:inline-block;margin-right:7px;}
+.reginster_title.telphone{ background: url(../images/phone.jpg) left center no-repeat; padding-left:25px;}
+
+
+/****** ×¢²á²½Öè  *******/
+
+.ui-stepBar-wrap{position:relative;width:100%;height:130px;background:#ebeef3;overflow:hidden;display:none;z-index:100;}
+.ui-stepBar-wrap .ui-stepBar{position:relative;width:90%;height:5px;background:#cccccc;top:50px;left:5%;z-index:101;}
+.ui-stepBar-wrap .ui-stepBar .ui-stepProcess{position:relative;width:0;height:5px;background:#516784;top:0;left:0;z-index:102;}
+.ui-stepBar-wrap .ui-stepInfo-wrap{width:90%;margin:0 auto;height:100%;}
+.ui-stepBar-wrap .ui-stepInfo-wrap .ui-stepInfo{position:relative;float:left;padding-top:36px;text-align:center;}
+.ui-stepBar-wrap .ui-stepInfo-wrap .ui-stepInfo .ui-stepSequence{position:relative;padding:4px 8px;border-radius:50%;z-index:103;}
+.ui-stepBar-wrap .ui-stepInfo-wrap .ui-stepInfo .ui-stepName{position:relative;line-height:50px;z-index:103; font-size:14px;}
+.ui-stepBar-wrap .ui-stepInfo-wrap .ui-stepInfo .judge-stepSequence-pre-change,
+.ui-stepBar-wrap .ui-stepInfo-wrap .ui-stepInfo .judge-stepSequence-hind-change{cursor:pointer;}
+.ui-stepBar-wrap .ui-stepInfo-wrap .ui-stepInfo .judge-stepSequence-pre-change:hover{box-shadow:0 0 3px 1px #516784;}
+.ui-stepBar-wrap .ui-stepInfo-wrap .ui-stepInfo .judge-stepSequence-hind-change:hover{box-shadow:0 0 3px 1px #cccccc;}
+.judge-stepSequence-pre{background:#2c512f;color:#ffffff;}
+.judge-stepSequence-hind{background:#cccccc;color:#000000;}
+
+.author{position:absolute;bottom:0;width:100%;text-align:center;margin:40px auto;color:#1569ec;text-shadow:1px 1px 0 #e7e7e7, 0 1px 7px #fff;}
+
+
+.shuoming{ font-size:14px; color:#C00; line-height:28px; padding:10px; background:#fff; margin-top:15px;}
+
+.register_ok { font-size:16px; line-height:30px;  margin:0 auto;}
+.font24{ font-size:24px; font-weight:bold; color:#060; line-height:50px;}
+.f18{ font-size:18px; font-weight:bold;}
+
+
+/****  Íü¼ÇÃÜÂë   *****/
+
+.forcon{width:800px; margin:0 auto; overflow:hidden; position:relative;  height:280px;}
+.bigbox{ width:1600px; position: absolute; left:0px; top:30px; }
+.b1{ width:800px;  float:left}
+.b2{ width:800px;  float:left}
+

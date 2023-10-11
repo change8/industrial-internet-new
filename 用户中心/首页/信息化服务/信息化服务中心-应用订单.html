@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>信息化服务中心</title>
+    <link rel="stylesheet"  href="../tools/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet"  href="../css/main.css">
+    <link rel="stylesheet" href="../tools/service/css/lrtk.css">
+    <link rel="stylesheet" href="../css/saas.css">
+    <link rel="stylesheet" href="../css/subUC.css">
+    <link rel="stylesheet" href="../css/substyle.css">
+    <link rel="stylesheet" href="../tools/jqueryPlugins/pagination/css/jquery.pagination.css">
+    <link rel="stylesheet" href="../tools/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="../js/picauto.js"></script>
+    <script src="../js/jquery-1.10.2.js" type="text/javascript"></script>
+    <script  src="../tools/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/picauto.js"></script>
+</head>
+
+<body>
+<div class="header" style="">
+    <div class="top-bar">
+        <div class="container clearfix">
+            <ul class="list-unstyled list-inline pull-left">
+                <li><a href="#"><i class="fa fa-qq"></i></a></li>
+                <li><a href="#"><i class="fa fa-weixin"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-weibo"></i></a></li>
+                <li><a href="#"><i class="fa fa-renren"></i></a></li>
+            </ul>
+            <p class=" pull-right text-light">
+                您好！张三，欢迎来到九江工业互联网
+            </p>
+        </div>
+    </div>
+    <header class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-5">
+                    <a href="../首页/用户中心.html">
+                        <img src="../images/logo.png" alt="" ></a>
+                </div>
+                <div class="col-xs-7 text-right uCenterLink">
+                    <a href="../../../index.html">
+                        <i class="UcenterIco personnel"></i><br/>
+                        前台/首页</a>
+                    <a href="../信息化服务/信息化服务.html">
+                        <i class="UcenterIco App"></i><br/>
+                        信息化服务</a>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+</div>
+<div class="body_center "  style="padding:0px;" >
+    <div class="container-fluid ">
+        <div class="row" >
+            <!-- TODO @lutz 左侧导航 -->
+            <div class="col-xs-2 leftMenu UCMenu">
+                <div class="logo">我的信息化服务</div>
+                <ul id="sideNav" class="nav nav-pills nav-stacked show-arrows">
+
+                    <li class="hasSub"><a href="#" class="notExpand"><i class="glyphicon glyphicon-user"></i><i class="arrowDown sideNav-arrow"></i> 我的工作台</a>
+                        <ul class="nav sub">
+                            <li><a href="信息化服务中心-公司公告.html"><i class=""></i> 公司公告</a></li>
+                            <li><a href="信息化服务中心-应用推荐.html"><i class=""></i> 应用推荐</a></li>
+                            <li><a href="信息化服务中心-内部交流.html"><i class=""></i> 内部交流</a></li>
+
+                        </ul>
+                    </li>
+                    <!--<li><a href="用户中心-我的应用.html"><i class="glyphicon glyphicon-th-large"></i> 我的应用</a></li>
+
+                    <li class="hasSub"><a href="#" class="notExpand"><i class="glyphicon glyphicon-list-alt"></i><i class="arrowDown sideNav-arrow"></i> 我的订单</a>
+                        <ul class="nav sub">
+                            <li><a href="用户中心-我的订单.html"><i class=""></i> 全部订单</a></li>
+                            <li><a href="用户中心-我的订单.html"><i class=""></i> 已完成订单</a></li>
+                            <li><a href="用户中心-我的订单.html"><i class=""></i> 未完成订单</a></li>
+                            <li><a href="用户中心-我的订单.html"><i class=""></i> 已取消订单</a></li>
+                        </ul>
+                    </li>-->
+                    <li class="hasSub"><a href="#" class="notExpand"><i class="glyphicon glyphicon-file"></i><i class="arrowDown sideNav-arrow"></i> 企业成员管理</a>
+                        <ul class="nav sub">
+                            <li><a href="信息化服务中心-企业成员管理.html"><i class=""></i> 企业成员管理</a></li>
+                        </ul>
+                    </li>
+                    <li class="hasSub"><a href="#" class="notExpand"><i class="glyphicon glyphicon-file"></i><i class="arrowDown sideNav-arrow"></i> 我的应用</a>
+                        <ul class="nav sub">
+                            <li><a href="信息化服务中心-我的应用.html"><i class=""></i> 我的应用</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="hasSub"><a href="#" class="active"><i class="glyphicon glyphicon-cog"></i><i class="arrowDown sideNav-arrow"></i> 我的订单</a>
+                        <ul class="nav sub show">
+                            <li><a href="信息化服务中心-应用订单.html" class="active"><i class=""></i> 应用订单</a></li>
+                            <li><a href="信息化服务中心-短信增值服务.html"><i class=""></i> 短信增值服务 </a></li>
+                            <li><a href="信息化服务中心-短信记录.html"><i class=""></i> 短信记录 </a></li>
+                        </ul>
+                    </li>
+                    <li class="hasSub"><a href="#" class="notExpand"><i class="glyphicon glyphicon-cog"></i><i class="arrowDown sideNav-arrow"></i>发票管理</a>
+                        <ul class="nav sub">
+                            <li><a href="信息化服务中心-申请开票.html"><i class=""></i>申请开票</a></li>
+                            <li><a href="信息化服务中心-开票历史.html"><i class=""></i> 开票历史 </a></li>
+                            <li><a href="信息化服务中心-订单开票统计.html"><i class=""></i> 订单开票统计 </a></li>
+                        </ul>
+                    </li>
+                    <!--<li><a href="用户中心-费用查询.html"><i class="glyphicon glyphicon-usd"></i> 费用查询</a></li>-->
+                </ul>
+            </div>
+
+            <div class="col-xs-10 userContent">
+
+                <!-- TODO @lutz 内容区 -->
+                <div class="col-xs-12 ucContainer">
+                    <div class="ucPanel">
+                        <div class="row mt10">
+                            <form class="form-horizontal col-xs-6" role="form">
+                                <div class="form-group mb10">
+                                    <label class="col-xs-2 control-label" for="productName">产品名称</label>
+                                    <div class="col-xs-6 pl0">
+                                        <input type="text" class="form-control input-sm" id="productName" placeholder="产品名称">
+                                    </div>
+                                    <button class="btn btn-default btn-sm pull-left">查询</button>
+                                </div>
+                            </form>
+                            <form class="form-horizontal col-xs-6" role="form">
+                                <div class="form-group mb10">
+                                    <label class="col-xs-2 control-label">订单状态</label>
+                                    <div class="col-xs-4 pl10 pr10">
+                                        <select class="form-control input-sm">
+                                            <option>全部订单</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="UCTable">
+                            <table class="table table-bordered table-striped table-hover">
+                                <thead>
+                                <tr>
+                                    <th width="14%">订单号</th>
+                                    <th width="13%">产品名称</th>
+                                    <th width="19%">功能模块</th>
+                                    <th width="11%">单价</th>
+                                    <th width="11%">生效时间</th>
+                                    <th width="11%">到期时间</th>
+                                    <th width="9%">订单状态</th>
+                                    <th width="12%">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="text-center">E20141011888939939</td>
+                                    <td>welink个人版包月</td>
+                                    <td class="text-center">1 功能模块：15元/月<br>
+                                        2 功能模块：65元/月<br>
+                                        3 功能模块：86元/月</td>
+                                    <td class="text-center">20元/月</td>
+                                    <td class="text-center">2023-1-1,10:10</td>
+                                    <td class="text-center">2023-1-1,10:10</td>
+                                    <td class="text-center">已过期</td>
+                                    <td class="text-center">
+                                        <div class="control">
+                                            <i class="glyphicon glyphicon-cog"></i>
+                                            <div class="control-btn">
+                                                <ul>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>查看</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-edit"></i>编辑</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-trash"></i>删除</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-ok"></i>通过</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-remove"></i>拒绝</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-open"></i>上架</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-save"></i>下架</a> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><a href="#">E20141011888939939</a></td>
+                                    <td>welink个人版包月</td>
+                                    <td class="text-center">&nbsp;</td>
+                                    <td class="text-center">20元/月</td>
+                                    <td class="text-center">2023-1-1,10:10</td>
+                                    <td class="text-center">2023-1-1,10:10</td>
+                                    <td class="text-center">已支付</td>
+                                    <td class="text-center">
+                                        <div class="control">
+                                            <i class="glyphicon glyphicon-cog"></i>
+                                            <div class="control-btn">
+                                                <ul>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>查看</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-edit"></i>编辑</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-trash"></i>删除</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-ok"></i>通过</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-remove"></i>拒绝</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-open"></i>上架</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-save"></i>下架</a> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><a href="#">E20141011888939939</a></td>
+                                    <td>welink个人版包月</td>
+                                    <td class="text-center">&nbsp;</td>
+                                    <td class="text-center">20元/月</td>
+                                    <td class="text-center">2023-1-1,10:10</td>
+                                    <td class="text-center">2023-1-1,10:10</td>
+                                    <td class="text-center">未支付</td>
+                                    <td class="text-center">
+                                        <div class="control">
+                                            <i class="glyphicon glyphicon-cog"></i>
+                                            <div class="control-btn">
+                                                <ul>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>查看</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-edit"></i>编辑</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-trash"></i>删除</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-ok"></i>通过</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-remove"></i>拒绝</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-open"></i>上架</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-save"></i>下架</a> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">E20141011888939939</td>
+                                    <td>welink个人版包月</td>
+                                    <td class="text-center">1 功能模块：15元/月<br>
+                                        2 功能模块：65元/月<br></td>
+                                    <td class="text-center">20元/月</td>
+                                    <td class="text-center">2023-1-1,10:10</td>
+                                    <td class="text-center">2023-1-1,10:10</td>
+                                    <td class="text-center">已过期</td>
+                                    <td class="text-center">
+                                        <div class="control">
+                                            <i class="glyphicon glyphicon-cog"></i>
+                                            <div class="control-btn">
+                                                <ul>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>查看</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-edit"></i>编辑</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-trash"></i>删除</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-ok"></i>通过</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-remove"></i>拒绝</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-open"></i>上架</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-save"></i>下架</a> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><a href="#">E20141011888939939</a></td>
+                                    <td>welink个人版包月</td>
+                                    <td class="text-center">&nbsp;</td>
+                                    <td class="text-center">20元/月</td>
+                                    <td class="text-center">2023-1-1,10:10</td>
+                                    <td class="text-center">2023-1-1,10:10</td>
+                                    <td class="text-center">已支付</td>
+                                    <td class="text-center">
+                                        <div class="control">
+                                            <i class="glyphicon glyphicon-cog"></i>
+                                            <div class="control-btn">
+                                                <ul>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>查看</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-edit"></i>编辑</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-trash"></i>删除</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-ok"></i>通过</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-remove"></i>拒绝</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-open"></i>上架</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-save"></i>下架</a> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><a href="#">E20141011888939939</a></td>
+                                    <td>welink个人版包月</td>
+                                    <td class="text-center">1 功能模块：15元/月<br>
+                                        2 功能模块：65元/月<br>
+                                        3 功能模块：86元/月</td>
+                                    <td class="text-center">20元/月</td>
+                                    <td class="text-center">2023-1-1,10:10</td>
+                                    <td class="text-center">2023-1-1,10:10</td>
+                                    <td class="text-center">未支付</td>
+                                    <td class="text-center">
+                                        <div class="control">
+                                            <i class="glyphicon glyphicon-cog"></i>
+                                            <div class="control-btn">
+                                                <ul>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>查看</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-edit"></i>编辑</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-trash"></i>删除</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-ok"></i>通过</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-remove"></i>拒绝</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-open"></i>上架</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-save"></i>下架</a> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">E20141011888939939</td>
+                                    <td>welink个人版包月</td>
+                                    <td class="text-center">&nbsp;</td>
+                                    <td class="text-center">20元/月</td>
+                                    <td class="text-center">2023-1-1,10:10</td>
+                                    <td class="text-center">2023-1-1,10:10</td>
+                                    <td class="text-center">已过期</td>
+                                    <td class="text-center">
+                                        <div class="control">
+                                            <i class="glyphicon glyphicon-cog"></i>
+                                            <div class="control-btn">
+                                                <ul>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>查看</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-edit"></i>编辑</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-trash"></i>删除</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-ok"></i>通过</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-remove"></i>拒绝</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-open"></i>上架</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-save"></i>下架</a> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><a href="#">E20141011888939939</a></td>
+                                    <td>welink个人版包月</td>
+                                    <td class="text-center">&nbsp;</td>
+                                    <td class="text-center">20元/月</td>
+                                    <td class="text-center">2023-1-1,10:10</td>
+                                    <td class="text-center">2023-1-1,10:10</td>
+                                    <td class="text-center">已支付</td>
+                                    <td class="text-center">
+                                        <div class="control">
+                                            <i class="glyphicon glyphicon-cog"></i>
+                                            <div class="control-btn">
+                                                <ul>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>查看</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-edit"></i>编辑</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-trash"></i>删除</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-ok"></i>通过</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-remove"></i>拒绝</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-open"></i>上架</a> </li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-save"></i>下架</a> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class=" fenye">
+                                <ul class="pagination m0 pagination-sm">
+                                    <li><a href="#">上一页</a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">下一页</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="site-footer">
+
+    <div class="footer-links clearfix">
+        <div class="col-links">
+            <div class="title">合作伙伴</div>
+            <ul>
+                <li><a href="#">中国信息协会</a></li>
+                <li><a href="#">中国物流采购联合会</a></li>
+                <li><a href="#">中国物流大数据产业联盟</a></li>
+                <li><a href="#">对外经济贸易大学</a></li>
+            </ul>
+            
+        </div>
+        
+        <div class="col-links">
+            <div class="title"> 帮助中心</div>
+            <ul><li> <a href="#">新手上路</a></li>
+                <li><a href="#"> 服务指南</a></li>
+                <li><a href="#"> 相关下载</a></li>
+            </ul>
+
+        </div>
+        <div class="col-links">
+            <div class="title">第e传媒</div>
+            <ul >
+                <li><a href="#">华翰新闻</a></li>
+                <li><a href="#">行业新闻</a></li>
+            </ul>
+
+        </div>
+        <div class="col-links">
+            <div class="title">第e智库 </div>
+            <ul>
+                <li><a href="#">关于大数据</a></li>
+                <li><a href="#">研究中心</a></li>
+                <li><a href="#">研究报告</a></li>
+            </ul>
+
+        </div>
+        <div class="col-contact">
+
+            <p class="phone">400-010-0101</p>
+
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="footer-info clearfix">技术支持：九江移动     免责声明 | 网站地图	 <br />© 2023 版权所有 xxxx数据科技股份有限公司   京ICP备00000000
+	号 <br>
+        <img src="../images/cnnic.png" width="54" height="20">  <img src="../images/xin.png" width="54" height="20"> <img src="../images/jingying.jpg" width="54" height="20"><img src="../images/pic.png" width="20" height="20"></div>
+</div>
+<div class="go-top dn" id="go-top">
+    <a class="uc-2vm" href=""  id="wx1"></a>
+    <div class="uc-2vm-pop dn" id="wxpic1">
+        <h2 class="title-2wm">关注微信</h2>
+        <div class="logo-2wm-box">
+            <img  src="../tools/service/images/weixin.jpg" alt="关注微信" width="170" height="170">
+        </div>
+    </div>
+    <a class="uc-2vm" href="" id="wb1"></a>
+    <div class="uc-2vm-pop dn" id="wbpic1">
+        <h2 class="title-2wm">关注微博</h2>
+        <div class="logo-2wm-box">
+            <img  src="../tools/service/images/weixin.jpg" alt="关注微博" width="170" height="170">
+        </div>
+    </div>
+
+</div>
+<script>picauto("pic1",50,50)</script>
+<script>
+    $("#wx1").mouseenter(function(){
+        $("#wxpic1").show(100);
+
+    });
+    $("#wx1").mouseleave(function(){
+        $("#wxpic1").hide(100);
+
+    });
+    $("#wb1").mouseenter(function(){
+        $("#wbpic1").show(100);
+
+    });
+    $("#wb1").mouseleave(function(){
+        $("#wbpic1").hide(100);
+
+    });
+</script>
+
+<script>
+    function add1(){
+        document.getElementById('diqu1').style.display='block';
+
+    }
+</script>
+<script>
+    $(document).ready(function(){
+        $("#diqu1").mouseleave(function(){
+            $("#diqu1").hide();
+        });
+
+    });
+
+</script>
+
+<script>
+    // 布局
+    function uint()
+    {
+        var cnHeight=$(".userContent").height();
+        $(".leftMenu").height(cnHeight);
+
+
+    }
+    $(function(){
+        uint();
+    })
+    window.onresize = function() {
+        setTimeout(function() {
+            uint();
+        }, 100);
+    };
+
+    $(function() {
+        $('span.star').raty({
+            path:'../resources/jsLibrary/raty/images'
+        });
+    });
+
+</script>
+</body>
+</body>
+</html>

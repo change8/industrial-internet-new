@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title></title>
+    <link rel="stylesheet"  href="../tools/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet"  href="../css/main.css">
+    <link rel="stylesheet" href="../tools/service/css/lrtk.css">
+    <link rel="stylesheet" href="../css/saas.css">
+    <link rel="stylesheet" href="../css/subUC.css">
+    <link rel="stylesheet" href="../css/substyle.css">
+    <link rel="stylesheet" href="../tools/jqueryPlugins/pagination/css/jquery.pagination.css">
+    <link rel="stylesheet" href="../tools/font-awesome/css/font-awesome.min.css">
+
+   <script type="text/javascript" src="../js/picauto.js"></script>
+   <script src="../js/jquery-1.10.2.js" type="text/javascript"></script>
+   <script  src="../tools/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/common.js"></script>
+    <style>
+        .header {
+            position:relative;
+            border-bottom:10px solid #999999;
+        }
+    </style>
+   <script type="text/javascript" src="../js/picauto.js"></script>
+        <script>  
+            //绘制饼图  
+            function drawCircle(canvasId, data_arr, color_arr, text_arr)  
+            {
+                var c = document.getElementById(canvasId);  
+                var ctx = c.getContext("2d");  
+  
+                var radius = c.height / 2 - 20; //半径  
+                var ox = radius + 200, oy = radius + 20; //圆心  
+  
+                var width = 40, height = 20; //图例宽和高  
+                var posX = ox * 2 + 20, posY = 30;   //  
+                var textX = posX + width + 5, textY = posY + 15;  
+  
+                var startAngle = 0; //起始弧度  
+                var endAngle = 0;   //结束弧度  
+
+				posX = 5;
+				textX = posX + width + 5;
+
+                for (var i = 0; i < data_arr.length; i++)  
+                {  
+                    //绘制饼图  
+                    endAngle = endAngle + data_arr[i] * Math.PI * 2; //结束弧度  
+                    ctx.fillStyle = color_arr[i];  
+                    ctx.beginPath();  
+                    ctx.moveTo(ox, oy); //移动到到圆心  
+                    ctx.arc(ox, oy, radius, startAngle, endAngle, false);  
+                    ctx.closePath();  
+                    ctx.fill();  
+                    startAngle = endAngle; //设置起始弧度  
+  
+                    //绘制比例图及文字  
+                    ctx.fillStyle = color_arr[i];  
+                    ctx.fillRect(posX, posY + 30 * i, width, height);  
+                    ctx.moveTo(posX, posY + 30 * i);  
+                    ctx.font = 'bold 12px 微软雅黑';    //斜体 30像素 微软雅黑字体  
+                    ctx.fillStyle = color_arr[i]; //"#000000";  
+                    var percent = text_arr[i] + "：" + 100 * data_arr[i] + "%";  
+                    ctx.fillText(percent, textX, textY + 30 * i);  
+                }  
+            }  
+  
+            function init() {  
+                //绘制饼图  
+                //比例数据和颜色  
+                var data_arr = [0.05, 0.25, 0.6, 0.1];  
+                var color_arr = ["#00FF21", "#FFAA00", "#00AABB", "#FF4400"];  
+                var text_arr = ["一类用户", "二类用户", "三类用户", "四类用户"];  
+  
+                drawCircle("canvas_circle", data_arr, color_arr, text_arr);  
+            }  
+  
+            //页面加载时执行init()函数  
+            window.onload = init;  
+        </script>  
+</head>
+
+<body>
+<div class="header" style="">
+    <div class="top-bar">
+        <div class="container clearfix">
+            <ul class="list-unstyled list-inline pull-left">
+                <li><a href="#"><i class="fa fa-qq"></i></a></li>
+                <li><a href="#"><i class="fa fa-weixin"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-weibo"></i></a></li>
+                <li><a href="#"><i class="fa fa-renren"></i></a></li>
+            </ul>
+            <p class=" pull-right text-light">
+                您好！张三，欢迎来到九江工业互联网
+            </p>
+        </div>
+    </div>
+    <header class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-5">
+                    <a href="../首页/用户中心.html">
+                    <img src="../images/logo.png" alt="" ></a>
+                </div>
+                <div class="col-xs-7 text-right uCenterLink">
+                    <a href="../../../index.html">
+                        <i class="UcenterIco personnel"></i><br/>
+                        前台/首页</a>
+                    <a href="../信息化服务/信息化服务.html">
+                        <i class="UcenterIco App"></i><br/>
+                        信息化服务</a>
+                </div>
+            </div>
+        </div>
+    </header>
+   </div>
+</div>
+<div class="body_center "  style="padding:0px;" >
+	<div class="wrap">
+    <div class="container">
+        <div class="row mt20 loginBox">
+            <div class="col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h2>登录 Login <span>没账号，现在去<a href="/Userportal/dispatcher/user/regist.page?current=regist">注册</a></span></h2>
+                        </div>
+                    </div>
+                    <div class="panel-body p20">
+                        <div class="row mb20"> 
+                            <!-- 如果需要登录提示，默认不显示 --> 
+                            <!--<div class="alert alert-warning" role="alert">您所访问的页面需要登录</div>--> 
+                            <!-- 登录提示 end -->
+                            <div class="col-xs-7"> 
+								<div class="pull-left" >
+									<br/>
+									<div>
+										<button style="margin-right:10px;" class="btn btn-sm pull-left  userdefaultbtn userdefaultbtn_sm">入驻用户类别占比</button>
+										<button style="margin-right:10px;" class="btn btn-sm pull-left  userdefaultbtn userdefaultbtn_sm">入驻用户类别占比</button>
+										<button style="margin-right:10px;" class="btn btn-sm pull-left  userdefaultbtn userdefaultbtn_sm">入驻用户类别占比</button>
+										<button style="margin-right:10px;" class="btn btn-sm  userdefaultbtn userdefaultbtn_sm">入驻用户类别占比</button>
+									</div>
+									<br/>
+									<div style="left:50px; height:260px">
+										<p>
+											<canvas id="canvas_circle" width="500" height="300">
+												浏览器不支持canvas  
+											</canvas>  
+										</p> 
+									</div>
+								</div>
+							</div>
+                            <div class="col-xs-5 pt20"> 
+                                <!-- 登录错误提示，默认不显示 -->
+                                    <div  id="loginTip" hidden="true" >
+	                                  	  <p class="alert alert-warning">
+												<span></span>
+										 </p>
+									</div>
+                                <!-- 登录错误提示 end-->
+                                <div class="lgForm" id="loginForm" style="width:330px;">
+                                    <!--  <form class="mb20" action="pages/userCenter.html">-->
+                                    	<div id="logbox" style="width:253px;">
+	                                        <div class="form-group">
+	                                            <label class="hidden" for="InputEmail1" id="usernameLabel">登录名</label>
+	                                            <input class="user form-control" id="InputEmail1" name="loginUserName" onblur="checkUserByGroup()" placeholder="用户名/手机号">
+	                                        </div>
+	                                        <div class="form-group">
+	                                            <label class="hidden" for="InputPassword1"id="passwordLabel">密码</label>
+	                                            <input type="password" name="loginPassword" class="pwd form-control" id="InputPassword1" placeholder="密码">
+	                                          	<p class="help-inline" id="forgetPwd">
+	                                          	
+	                                          	<a onClick="ForgotPassword()" href="javascript:void(0)">忘记密码</a>
+	                                          	</p> 
+	                                        </div>
+	                                        <div class="form-group row">
+	                                        	<div class="col-xs-7">
+		                                            <label class="hidden" for="InputRCode" id="identifyingCodeLabel">验证码</label>
+		                                            <input type="text" class="w9 form-control pull-left"  id="InputRCode" onfocus="checkUserByGroup()" name="identifyingCode" placeholder="验证码" maxlength="4">
+	                                            </div>
+	                                            <div class="col-xs-4" data-toggle="tooltip" data-placement="bottom" title="点击，换一组">
+	                                            	<img id="yanzhengmaImg" onclick="this.src = '/Userportal/dispatcher/user/identifyingCode?' + Math.random();"
+															alt="更换验证码" style="width: 70px;height: 32px;">		
+												</div>		
+	                                        </div>
+	                                        <div class="form-group row" id="suijima" style="display:none;">
+	                                        	<div class="col-xs-8">
+		                                            <label class="hidden" for="suijiInputCode" id="suijima">随机码</label>
+		                                            <input type="text" class="w5 form-control pull-left" id="suijiInputCode" name="suijiCode" placeholder="随机码" maxlength="4">
+	                                            </div>
+	                                            <div class="col-xs-4" data-toggle="tooltip" data-placement="bottom" title="点击，获取验证码" style="padding: 0px;">
+	                                            	<button onclick="sendCode()" id="suijibtn" href="javascript:void(0)" class="btn1 logo_yzm" style="margin-left: -1px;">获取随机码</button>	
+												</div>
+	                                        </div>
+	                                         <div id="phone"></div>
+	                                        <div>
+	                                            <label id="rememberLabel">
+	                                                <input type="checkbox" id="rememberMe">
+	                                                记住用户名 </label>
+	                                        </div>
+	                                        <a href="用户中心.html"><button type="button"class="btn loginBtn btn-block"  id="loginBtn" onclick="errorMessage()">立即登录</button></a>
+											 <input type="text" hidden="true" id="activeMessage" value="">
+										 </div>
+										 
+										 
+										 
+										 
+										<!-- 验证账号 -->
+										<div  id="Password" style="display: none;">
+													<div  class="logo_failure" style="display: none;" id="pwdTip1">
+														<p >
+															<span></span>
+														</p>
+													</div>
+											<div class="logo_dl_title">验证账号</div>
+											<ul class="forget_ul">
+												<li><span class="logo_dl_title_sp"> 找回方式：</span>
+												<select onchange="listionFPtype($(this).val())">  
+  													<option value ="email" selected="selected">邮箱</option>  
+  													<option value ="phone">手机</option>  
+												</select>  
+												</li>
+												
+												<li><span id="emailOrPhone" class="logo_dl_title_sp"> 邮箱账号：</span> <input
+													id="email" type="email" name="email"
+													placeholder="请输入注册的邮箱地址"  class="logo_srk01_1" />
+												</li>
+												<li>
+		                                            <span class="logo_dl_title_sp">随机码：</span>
+		                                            <input type="suijiCode" class="logo_srk02" id="suijiCode" name="suijiCode" placeholder="随机码" maxlength="4">
+	                                            	<img id="suijimaImg" onclick="this.src = '/Userportal/dispatcher/user/identifyingCode?' + Math.random();"
+																alt="更换随机码" style="width: 70px;height: 32px;">
+	                                            </li>	
+												<li><span  class="logo_dl_title_sp">验证码：</span> <input id="identifyCode" type="identifyCode" name="identifyCode" placeholder="验证码"
+													class="logo_srk02" /> <button onclick="getIdentifyCode()" id="yanma" href="javascript:void(0)" class="btn1 logo_yzm">获取验证码</button>
+												</li>
+												<!-- 下一步 上一步 -->
+												<li class="dl_but">
+													<a href="#"   onclick="back1()" style="color:black;" >上一步</a>
+													<a href="#"  onClick="ForgotPassword2()" style="color:black;">下一步</a>
+												</li>
+											</ul>
+					
+										</div>
+										
+									
+										 <!--重置密码 -->
+										<div  id="Password_chongzhi" style="display: none;">
+										<div  class="logo_failure" style="display: none;" id="pwdTip2">
+													<p >
+														<span></span>
+													</p></div>
+											<div class="logo_dl_title">重置密码</div>
+											<input type="hidden" id="customerId" value="" />
+											<input type="hidden" id="oldPswd" value="" />
+											<ul class="forget_ul">
+												<li><span class="logo_dl_title_sp">新密码：</span> <input
+													id="pwd" name="pwd" placeholder="新密码" type="password"
+													class="logo_srk01_1" /></li>
+												<li><span class="logo_dl_title_sp">确认密码：</span> <input
+													id="confirmPwd" name="confirmPwd" placeholder="确认密码"
+													type="password" class="logo_srk01_1" /></li>
+												<li class="mt20 dl_but">
+												<a href="#"   onclick="back2()" style="color:black;">上一步</a>
+												<a href="#"  onClick="ForgotPassword3()" style="color:black;">下一步</a>
+												
+												</li>
+											</ul>
+										</div>
+										 
+										<!--完成 -->
+										<div class="logo_dl" id="Password_succes" style="display: none;">
+											<div class="logo_dl_title">完成</div>
+											<div class="wc_pic">
+												<img src="/Userportal/assets/css/images/succesico.png" width="42" height="42" />
+												恭喜您！密码找回成功！
+											</div>
+					
+											<div >
+												<span class="fleft wc_btton_l" id="btn"><a href="/Userportal/dispatcher/user/login.page?current=login"  class="button">返回登录</a>
+												</span> 
+											</div>
+										</div> 
+										 
+									<!-- </form> -->
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="site-footer">
+ 
+ <div class="footer-links clearfix">
+  <div class="col-links">
+    <div class="title">合作伙伴</div>
+    <ul>
+    <li><a href="#">中国信息协会</a></li>
+    <li><a href="#">中国物流采购联合会</a></li>
+    <li><a href="#">中国物流大数据产业联盟</a></li>
+    <li><a href="#">对外经济贸易大学</a></li>
+    </ul>
+    
+  </div>
+  
+  <div class="col-links">
+    <div class="title"> 帮助中心</div>
+    <ul><li> <a href="#">新手上路</a></li>
+    <li><a href="#"> 服务指南</a></li>
+    <li><a href="#"> 相关下载</a></li>
+    </ul>
+    
+  </div>
+  <div class="col-links">
+    <div class="title">第e传媒</div>
+    <ul >
+    <li><a href="#">华翰新闻</a></li>
+    <li><a href="#">行业新闻</a></li>
+    </ul>
+    
+  </div>
+  <div class="col-links">
+    <div class="title">第e智库 </div>
+    <ul>
+    <li><a href="#">关于大数据</a></li>
+    <li><a href="#">研究中心</a></li>
+    <li><a href="#">研究报告</a></li>
+    </ul>
+    
+  </div>
+  <div class="col-contact">
+
+                <p class="phone">400-886-7315</p>
+                   
+                 </div>
+  <div class="clear"></div>
+ </div>
+ <div class="footer-info clearfix">技术支持：九江移动     免责声明 | 网站地图	 <br />© 2023 版权所有xxxx数据科技股份...   京ICP备00000000号 <br>
+  <img src="../images/cnnic.png" width="54" height="20">  <img src="../images/xin.png" width="54" height="20"> <img src="../images/jingying.jpg" width="54" height="20"><img src="../images/pic.png" width="20" height="20"></div>
+</div>
+<div class="go-top dn" id="go-top">
+     <a class="uc-2vm" href=""  id="wx1"></a>
+	<div class="uc-2vm-pop dn" id="wxpic1">
+		<h2 class="title-2wm">关注微信</h2>
+		<div class="logo-2wm-box">
+			<img  src="../tools/service/images/weixin.jpg" alt="关注微信" width="170" height="170">
+		</div>
+	</div>
+     <a class="uc-2vm" href="" id="wb1"></a>
+	<div class="uc-2vm-pop dn" id="wbpic1">
+		<h2 class="title-2wm">关注微博</h2>
+		<div class="logo-2wm-box">
+			<img  src="../tools/service/images/weixin.jpg" alt="关注微博" width="170" height="170">
+		</div>
+	</div>
+
+</div>
+<script>picauto("pic1",50,50)</script>
+<script>
+  $("#wx1").mouseenter(function(){
+    $("#wxpic1").show(100);
+	
+  });
+  $("#wx1").mouseleave(function(){
+    $("#wxpic1").hide(100);
+	
+  });
+  $("#wb1").mouseenter(function(){
+    $("#wbpic1").show(100);
+	
+  });
+  $("#wb1").mouseleave(function(){
+    $("#wbpic1").hide(100);
+	
+  });
+ </script>
+ 
+ <script>
+function add1(){
+	document.getElementById('diqu1').style.display='block';
+	
+}
+ </script>
+ <script>
+$(document).ready(function(){
+  $("#diqu1").mouseleave(function(){
+    $("#diqu1").hide();
+  });
+  
+});
+
+</script>
+
+<script>
+    // 布局
+    function uint()
+    {
+        var cnHeight=$(".userContent").height(); 
+        $(".leftMenu").height(cnHeight);
+
+     
+    }
+    $(function(){
+        uint();
+    })
+    window.onresize = function() {
+        setTimeout(function() {
+            uint();
+        }, 100);
+    };
+
+    $(function() {
+        $('span.star').raty({
+            path:'../resources/jsLibrary/raty/images'
+        });
+    });
+
+</script>
+</body>
+</body>
+</html>
